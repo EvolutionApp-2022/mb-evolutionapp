@@ -15,7 +15,7 @@ class UserActivity : AppCompatActivity() {
 
 
         btnAlumno.setOnClickListener(){
-            startActivity(Intent(this, HomeAlumnoActivity::class.java))
+            startActivity(Intent(this, HomeStudentActivity::class.java))
         }
     }
 }
