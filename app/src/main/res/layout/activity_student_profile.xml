@@ -41,6 +41,7 @@
         android:layout_gravity="center"/>
 
     <Button
+        android:id="@+id/btnChangeImage"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Cambiar Imagen"
@@ -64,7 +65,7 @@
         android:text="Nombre: Camila Hurtado"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -84,7 +85,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="125"
         android:textSize="65sp"
         android:textColor="#048ABF"
@@ -98,5 +99,14 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:text="Log out"
+        />
 
 </LinearLayout>
