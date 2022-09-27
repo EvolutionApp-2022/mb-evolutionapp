@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +29,6 @@ class LoginActivity : AppCompatActivity() {
         }
     }
     private fun showErrorText(){
-        Toast.makeText(this, "Faltan completar algunos campos!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Faltan completar campos!", Toast.LENGTH_SHORT).show()
     }
 }
