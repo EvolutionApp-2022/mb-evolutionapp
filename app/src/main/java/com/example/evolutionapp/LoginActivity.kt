@@ -10,10 +10,23 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val loginEmail: EditText = findViewById(R.id.loginEmail)
+        val loginPass: EditText = findViewById(R.id.loginPass)
         val btnLogin: Button = findViewById(R.id.btnLogin1)
-
         btnLogin.setOnClickListener(){
+            checkNotBlank(loginEmail, loginPass)
+        }
+    }
+
+    private fun checkNotBlank(email: EditText, pass: EditText){
+        if(email.text.isNotEmpty() and pass.text.isNotEmpty()){
             startActivity(Intent(this, HomeStudentActivity::class.java))
         }
+        else{
+            showErrorText()
+        }
+    }
+    private fun showErrorText(){
+        Toast.makeText(this, "Faltan completar algunos campos!", Toast.LENGTH_SHORT).show()
     }
 }
