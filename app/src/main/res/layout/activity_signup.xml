@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/signupNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/cajaedit"
+        android:inputType="text"
+        android:padding="7dp"
+        android:hint="Ej. Camila" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/signupApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/cajaedit"
+        android:inputType="text"
+        android:padding="7dp"
+        android:hint="Ej. Hurtado" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/cajaedit"
+        android:inputType="text"
+        android:padding="7dp"
+        android:hint="example@gmail.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupPass"
+        android:background="@drawable/cajaedit"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="40dp"
+        android:padding="7dp"
+        android:hint="*********"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Institución Academica"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/signupInstitucion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/cajaedit"
+        android:inputType="text"
+        android:padding="7dp"
+        android:hint="Ej. Franco Peruano" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="@color/black"
+        android:text="Confirmar"/>
+
+</LinearLayout>
